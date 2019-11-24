@@ -115,118 +115,49 @@
   </div>
 </div>
     
-    
-    <div class="bg-dark py-5 mt-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-8">
-                <h3 class="text-light">Urun Ozellikleri</h3>
-                <ul class="list-inline">
-                    <li class="list-inline-item">
-                        <a href="">T-Shirt</a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="">Bere</a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="">Canta</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-sm-4">
-                
-                <form class="form-inline">
-                    <div class="form-group mx-sm-3 mb-2">
-                        <label for="ebulten" class="sr-only">E-Bulten</label>
-                        <input type="email" class="form-control" id="ebulten" placeholder="mail adresin">
-                    </div>
-                    <button type="submit" class="btn btn-dark mb-2">Kaydol</button>
-                    </form>
+     <footer class="pt-4 my-md-5 pt-md-5 border-top">
+              <div class="row">
+                <div class="col-12 col-md">
+                  <img class="mb-2" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
+                  <small class="d-block mb-3 text-muted">© 2017-2019</small>
+                </div>
+                <div class="col-6 col-md">
+                  <h5>Dersler</h5>
+                  <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Html</a></li>
+                    <li><a class="text-muted" href="#">Css</a></li>
+                    <li><a class="text-muted" href="#">Bootstrap</a></li>
+                    <li><a class="text-muted" href="#">Python</a></li>
+                  
+                  </ul>
+                </div>
+                <div class="col-6 col-md">
+                  <h5>Biz Kimiz</h5>
+                  <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">İrem SİMSAR</a></li>
+                    <li><a class="text-muted" href="#">Kübra KILIÇ</a></li>
+                    <li><a class="text-muted" href="#">Nermin SAVAŞ</a></li>
+                    <li><a class="text-muted" href="#">Mehmet Emin</a></li>
+                     <li><a class="text-muted" href="#">Büşra ..</a></li>
+                  </ul>
+                </div>
+                <div class="col-6 col-md">
+                  <h5>İLETİŞİM</h5>
+                  <ul class="list-unstyled text-small">
 
-            </div>
-        </div>
+                    
+                      <li><a class="text-muted" href="#">iremsimsar46@gmail.com</a></li>
+                    <li><a class="text-muted" href="#">kubrakilic297@gmail.com</a></li>
+                    <li><a class="text-muted" href="#">nerminsavasturk04@gmail.com</a></li>
+                   
+                  </ul>
+                </div>
 
-        <div class="row border-top mb-3"></div>
-        <div class="row">
-            <div class="col-sm-2">
-                <h5 class="text-light">Erkek</h5>
-                <p class="text-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, hic.</p>
-                <ul class="list-unstyled">
-                    {% for item in categories %}
-                        {% if item.gender == "men" or item.gender == "unisex"  %}
-                        <li>
-                        <a class="" href="{% url 'category_show' category_slug=item.slug %}">
-                          {{ item.title }}
-                        </a>
-                        </li>
-                        {% endif %}
-                    {% endfor %}
-                </ul>
-            </div>
-            <div class="col-sm-2">
-                <h5 class="text-light">Kadin</h5>
-                <p class="text-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, hic.</p>
-                <ul class="list-unstyled">
-                        {% for item in categories %}
-                        {% if item.gender == "women" or item.gender == "unisex"  %}
-                        <li>
-                        <a class="" href="{% url 'category_show' category_slug=item.slug %}">
-                          {{ item.title }}
-                        </a>
-                    </li>
-                        {% endif %}
-                    {% endfor %}
-                </ul>
-            </div>
-            <div class="col-sm-2">
-                <h5 class="text-light">Her Zaman</h5>
-                <p class="text-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, hic.</p>
-                <ul class="list-unstyled">
-                    {% for item in categories %}
-                        {% if item.gender == "unisex"  %}
-                        <li class="list-item">
-                        <a class="" href="{% url 'category_show' category_slug=item.slug %}">
-                          {{ item.title }}
-                        </a>
-                    </li>
-                        {% endif %}
-                    {% endfor %}
-                </ul>
-            </div>
-            <div class="col-sm-2">
-                <h5 class="text-light">Bilgi</h5>
-                <p class="text-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, hic.</p>
-                <ul class="list-unstyled">
-                    {% for item in pages %}
-                    <li>
-                        <a href="{% url 'page_show' slug=item.slug %}">
-                        {{ item.title }}    
-                        </a>
-                    </li>
-                    {% endfor %}
+              </div>
+            </footer>
+      
+      
 
-                </ul>
-            </div>
-            <div class="col-sm-2">
-                <h5 class="text-light">Yardim</h5>
-                <ul class="list-unstyled">
-                    <li><a href="">Consequatur, eius pariatur.</a></li>
-                    <li><a href="">Quaerat, reprehenderit quam.</a></li>
-                    <li><a href="">Harum, maxime eum.</a></li>
-                </ul>
-            </div>
-            <div class="col-sm-2">
-                <h5 class="text-light">Sosyal Medya</h5>
-                <ul class="list-unstyled text-white">
-                    <li><a href="" >Maxime, ullam iusto.</a></li>
-                    <li><a href="" >Voluptatum, vel voluptas.</a></li>
-                    <li><a href="" >Non, nemo omnis.</a></li>
-                </ul>
-            </div>
-        </div>
-
-    </div>
-</div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
