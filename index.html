@@ -7,43 +7,88 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <style>
+       .navbar-brand{
+            font-family: 'Permanent Marker', cursive;
+            font-size: 25px;
+            width:300px;
+            padding: 26px 15px;
 
-    <title>Hello, world!</title>
+
+
+        }
+        .navbar{
+            -webkit-box-shadow: 1px 3px 1px 1px #4A4A4A; /*gölgelendirme yapıldı cssgeneretor sayfasındna*/
+             box-shadow: 1px 3px 1px 1px #4A4A4A;
+             height: 75px;
+
+        }
+        .navbar-nav>li>a {
+            padding-top: 27px;
+            padding-bottom: 26px;
+            font-family: 'Concert One', cursive;
+            font-size: 17px;
+        }
+        .navbar-form{
+            padding-top: 11px;
+        }
+        .navbar-inverse .navbar-brand{
+
+            color: navajowhite;
+
+        }
+        .navbar-inverse .navbar-nav>li>a 
+        {
+            color: navajowhite;
+        }
+
+
+        .hvr-grow-rotate {
+              display: inline-block;
+              vertical-align: middle;
+              -webkit-transform: perspective(1px) translateZ(0);
+              transform: perspective(1px) translateZ(0);
+              box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+              -webkit-transition-duration: 0.3s;
+              transition-duration: 0.3s;
+              -webkit-transition-property: transform;
+              transition-property: transform;
+            }
+        .hvr-grow-rotate:hover, .hvr-grow-rotate:focus, .hvr-grow-rotate:active {
+              -webkit-transform: scale(1.1) rotate(4deg);
+              transform: scale(1.1) rotate(4deg);
+        }
+
+    </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">KÜBRA KILIÇ</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto pl-3">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Anasayfa <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Hakkımızda</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Çalışmalarım
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">İletişim</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" >Kübra KILIÇ</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav ">
+        <li class="active hvr-grow-rotate"><a href="#">AnaSayfa</a></li>
+       <li class="hvr-grow-rotate"><a href="#">Referanslar</a></li>
+        <li class="hvr-grow-rotate"><a href="#">BS</a></li>
+        <li class="hvr-grow-rotate"><a href="#">Hakkımda</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hvr-grow-rotate"><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li class="hvr-grow-rotate"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>  
+       <form class="navbar-form navbar-left" action="/action_page.php">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search"> </div>
+         <button type="submit" class="btn btn-default">Submit</button>
+    </div>
   </div>
 </nav>
     <!-- Optional JavaScript -->
